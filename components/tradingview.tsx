@@ -29,7 +29,8 @@ function TradingViewWidget() {
 					  "save_image": false,
 					  "calendar": false,
 					  "hide_volume": true,
-					  "support_host": "https://www.tradingview.com"
+					  "support_host": "https://www.tradingview.com",
+					  "height":"100%"
 					}`;
 
 				if (container.current) {
