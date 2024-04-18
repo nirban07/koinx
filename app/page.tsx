@@ -13,7 +13,7 @@ export default function Home() {
 
   // console.log(data)
   return (
-    <div className='bg-[#EFF2F5] h-screen  flex flex-col gap-4'>
+    <div className='bg-[#EFF2F5]   flex flex-col gap-4'>
       {/* nav */}
       <Navbar />
 
