@@ -7,9 +7,36 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .slider {
+    @apply appearance-none w-full h-[4.63px] rounded-[9.6px] opacity-70 transition-opacity duration-[0.2s] bg-gradient-to-r from-[#FF4949] via-[#FF4E11] via-[#FC870A] via-[#FFAF11] via-[#C2CB21] to-[#11EB68];
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    /* Full-width */
+    /* Specified height */
+    /* background: #d3d3d3; */
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: 0.2s;
+    /* 0.2 seconds transition on hover */
+  }
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-0 h-0 cursor-pointer border-r-[15px] border-r-[#04AA6D] border-y-[10px] border-y-transparent border-solid;
+    -webkit-appearance: none;
+    /* Adjust size and color as needed */
+  }
+  .slider::-moz-range-thumb {
+    @apply w-0 h-0 cursor-pointer border-r-[15px] border-r-[#04AA6D] border-y-[10px] border-y-transparent border-solid;
+    /* Adjust size and color as needed */
   }
 }

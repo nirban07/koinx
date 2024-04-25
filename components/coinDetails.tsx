@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 import Options from './options';
+import Performance from './performance';
 import Tradingview from './tradingview';
 
 type TData = {
@@ -111,7 +112,7 @@ const CoinDetails = () => {
 			</div>
 
 			<Options />
-
+			<Performance />
 		</div>
 	)
 }
